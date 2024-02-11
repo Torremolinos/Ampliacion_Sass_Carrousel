@@ -1,0 +1,24 @@
+{
+  "name": "ampliacion_sass_carrousel",
+  "version": "1.0.0",
+  "description": "Ampliacion con Sass y un Carrousel",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Torremolinos/Ampliacion_Sass_Carrousel.git"
+  },
+  "keywords": [
+    "Sass",
+    "BaldursGate3",
+    "Ampliacion"
+  ],
+  "author": "Adrián Iglesias Riño",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Torremolinos/Ampliacion_Sass_Carrousel/issues"
+  },
+  "homepage": "https://github.com/Torremolinos/Ampliacion_Sass_Carrousel#readme"
+}
