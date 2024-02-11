@@ -20,5 +20,7 @@
   "bugs": {
     "url": "https://github.com/Torremolinos/Ampliacion_Sass_Carrousel/issues"
   },
-  "homepage": "https://github.com/Torremolinos/Ampliacion_Sass_Carrousel#readme"
+  "devDependencies": {
+    "sass": "^1.70.0"
+  }
 }
