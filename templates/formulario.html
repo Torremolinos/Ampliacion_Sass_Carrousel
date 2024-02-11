@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario para contactar con nosotros</title>
+    <link rel="stylesheet" href="/styles/formulario.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <header>
+        <a href="../index.html">
+            <img src="/assets/imgs/svg/logo-barcelona.svg" alt="" class="logo">
+        </a>
+        <button id="abrir" class="abrir-menu"><i class="bi bi-list"></i></button>
+
+        <nav class="nav" id="nav">
+            <button class="cerrar-menu" id="cerrar"><i class="bi bi-x"></i></button>
+            <ul class="nav-list">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="https://larian.com/">Acerca de</a></li>
+                <li><a href="/templates/formulario.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="contenedor-form">
+        <div class="wrap-form">
+            <form name="formulario" id="formulario" action="../templates/envio.html" method="get">
+                <div class="title">
+                    <h1>Contáctanos</h1>
+                </div>
+                
+                <div class="user-details">
+                    <div class="input-box">
+                        <label for="nombre" class="details">Nombre:</label><br>
+                        <input id="nombre" name="nombre" type="text" placeholder="Nombre" class="name">
+                    </div>
+                    <div class="user-details">
+                        <label for="apellido">Apellido:</label><br>
+                        <input id="apellido" name="apellido" type="text" placeholder="Apellido" class="lastname">
+                    </div>
+
+                    <div class="user-details">
+                        <label for="telefono">Telefono:</label><br>
+                        <input id="telefono" name="telefono" type="text" placeholder="Teléfono" class="phone">
+                    </div>
+                    <label for="correo">Correo:</label><br>
+                    <input id="correo" name="correo" type="email" placeholder="Correo" class="email">
+                    <div class="divTextArea">
+                        <label for="mensaje">Mensaje:</label><br>
+                        <textarea id="mensaje" name="mensaje" placeholder="Comentarios" cols="45" rows="10"
+                            class="message"></textarea>
+                        <br>
+                        <input id="enviar" type="submit" class="btn" value="Enviar">
+                        <br>
+                    </div>
+                </div>
+                <ul class="errores" id="errores"></ul>
+            </form>
+        </div>
+    </main>
+    <footer class="pie-pagina">
+        <section class="grupo-1">
+            <div class="box">
+                <figure>
+                    <a href="../index.html">
+                        <img src="/assets/imgs/svg/Copy-of-BG3_logo_1.svg" alt="Logo Baldursgate3">
+                    </a>
+                </figure>
+            </div>
+            <div class="box">
+                <h2>SOBRE NOSOTROS</h2>
+                <a href="https://larian.com/">Company</a>
+                <a href="https://larian.com/playtest">PlayTest</a>
+                <a href="https://larian.com/careers">Carrers</a>
+            </div>
+            <div class="box">
+                <div class="red-social">
+                    <h2>REDES SOCIALES</h2>
+                    <a href="#"><img src="../assets/imgs/5296520_bubble_chat_mobile_whatsapp_whatsapp logo_icon.png"
+                            alt=""></a>
+                    <a href="https://www.facebook.com/LarianStudios/?locale=es_ES"><img
+                            src="../assets/imgs/5296500_fb_social media_facebook_facebook logo_social network_icon.png"
+                            alt=""></a>
+                    <a href="https://www.linkedin.com/company/larian-studios/?originalSubdomain=es"><img src="../assets/imgs/5296501_linkedin_network_linkedin logo_icon.png" alt=""></a>
+                    <a href="https://www.instagram.com/larianstudios/"><img src="../assets/imgs/5296765_camera_instagram_instagram logo_icon.png" alt=""></a>
+                </div>
+            </div>
+        </section>
+        <div class="grupo-2">
+            © 2020 Larian Studios. Todos los derechos reservados. Larian Studios, Divinity,
+            Divinity: Original
+            Sin
+            and
+            otros términos son marcas registradas de Larian Studios.</div>
+    </footer>
+
+    <script src="../scripts/main.js"></script>
+</body>
+
+</html>
