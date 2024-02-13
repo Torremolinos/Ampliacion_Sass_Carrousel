@@ -1,4 +1,3 @@
-@import 'base/variables.scss';
-body{
-    background-color: $rojo;
-}
+@use 'base/header.scss';
+@use 'base/footer.scss';
+@use 'base/variables.scss';
