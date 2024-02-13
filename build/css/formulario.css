@@ -171,6 +171,34 @@ header {
   }
 }
 
+/*boton toogle*/
+.btn-toggle{
+  background: #ffffff00;
+  border-radius: 25px;
+  cursor: pointer;
+}
+:root{
+  --bkg-color: #fff;
+  --text-color: #000000;
+}
+
+  body.dark-theme {
+    --text-color: #eee;
+   background: #000;
+  }
+  
+  body {
+    background: var(--bkg-color);
+  }
+  
+  h1,
+  p {
+    color: var(--text-color);
+  }
+  
+/*Fin boton toogle.*/
+
+
 /*------------pie-----------*/
 .pie-pagina {
   width: 100%;

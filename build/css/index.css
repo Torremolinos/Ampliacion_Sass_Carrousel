@@ -216,8 +216,8 @@ button {
 
 /*boton toogle*/
 .btn-toggle{
-  background: #ffffff;
-  border-radius: 25px;
+  background: #ffffff00;
+
   cursor: pointer;
 }
 :root{
@@ -553,7 +553,6 @@ body:is(:hover, :focus-visible)::-webkit-scrollbar-thumb {
 
 .slider {
   --slider-items: 1; /* mandatory for slider */
-
   position: relative;
   width: 100%;
   padding-inline: 16px;
@@ -630,7 +629,7 @@ body:is(:hover, :focus-visible)::-webkit-scrollbar-thumb {
   top: 50%;
   transform: translateY(-50%);
   z-index: 2;
-  margin: 5;
+  margin-left: 9px;
 }
 .iconSliderPrev {
   margin-left: -14px;
