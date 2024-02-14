@@ -1,1 +1,9 @@
-$rojo: red;
+//Fuente
+@font-face {
+    font-family: "Mulish";
+    src: url("/src/fonts/fonts/static/Mulish-BlackItalic.ttf") format("truetype");
+}
+
+$--font-family: "Mulish";
+
+//Colores

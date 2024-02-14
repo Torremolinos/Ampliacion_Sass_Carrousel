@@ -1,0 +1,147 @@
+@font-face {
+  font-family: "Mulish";
+  src: url("/assets/fonts/fonts/static/Mulish-BlackItalic.ttf")
+    format("truetype");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--backgroundBody-color);
+  font-family: "Mulish";
+}
+
+main {
+  overflow: hidden; /*para que no se salga el contenido de los section*/
+}
+
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --color--white: rgb(218, 179, 107);
+  --color--h3: rgb(154, 17, 8);
+  --backgroundBody-color: rgb(10, 10, 10);
+  --backgroundLarianLogo-color: rgba(173, 59, 6, 0.953);
+  --LarianMargin-left: 5rem;
+  --LarianWidth: 6rem;
+  --LarianHeight: 6rem;
+  --h1ps1--font-Size: 9rem;
+  --footParts--padding: 2rem;
+  --h1--font-size: 3rem;
+  --font-family: "Mulish";
+  --s2--font-size: 2rem;
+  --s2--max-height: 1200px;
+}
+
+@media screen and (max-width: 1024px) {
+  :root {
+    --color--white: rgb(218, 179, 107);
+    --color--h3: rgb(154, 17, 8);
+    --backgroundBody-color: black;
+    --backgroundLarianLogo-color: rgba(173, 123, 6, 0.953);
+    --LarianMargin-left: 5rem;
+    --LarianWidth: 5rem;
+    --LarianHeight: 6rem;
+    --h1ps1--font-Size: 4rem;
+    --footParts--padding: 2rem;
+    --h1--font-size: 3rem;
+    --font-family: "Mulish";
+    --s2--font-size: 1rem;
+    --s2--max-height: 37.5rem;
+  }
+}
+.h1ps1 {
+  font-size: var(--h1ps1--font-Size);
+  font-family: var(--font-family);
+  font-family: "Mulish";
+}
+.imageh1ps1 {
+  width: 100%;
+  height: 100%;
+}
+
+.logo {
+  max-width: var(--LarianWidth);
+  height: 8rem;
+}
+.s1 {
+  z-index: -1;
+  position: fixed;
+  /* background:center/cover; */
+  /*aqui realizaremos el corte*/
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
+  position: relative;
+  color: var(--color--white);
+  font-family: var(--font-family);
+  width: 100%;
+  height: 100%;
+}
+.s1::before {
+  content: "";
+  background: rgba(171, 43, 43, 0.188);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  opacity: 0.5;
+}
+.s2 {
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  max-height: var(--s2--max-height);
+}
+.s2 p {
+  font-size: var(--s2--font-size);
+  color: var(--color--white);
+  margin: auto;
+  padding: 4rem;
+}
+button {
+  background: #9e2929;
+  color: #fff;
+  border: none;
+  padding: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 1rem;
+}
+.ps1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.h1ps1 {
+  color: var(--color--white); /*hacer globales las repetidas o las de mas uso*/
+  font-size: var(--h1ps1--font-Size);
+  font-family: "Mulish";
+}
+.navHiden {
+  display: none;
+}
+
+a {
+  color: var(--color--white);
+  text-decoration: none;
+}
+
+h3 {
+  color: var(--color--h3);
+}
+p {
+  color: var(--color--white);
+}
+
+.h1S3 {
+  margin-top: 3rem;
+  font-size: 2rem;
+}
