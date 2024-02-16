@@ -1,3 +1,4 @@
+
 @font-face {
     font-family: "Mulish";
     src: url("/assets/fonts/fonts/static/Mulish-BlackItalic.ttf")
@@ -60,14 +61,7 @@
     font-family: "Mulish";
   }
   
-  header {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    padding: 1rem;
-    background-color: #000000;
-  }
-  
+
   .logo {
     max-width: 5rem;
   }
@@ -102,7 +96,7 @@
     }
   
     .abrir-menu {
-      color: #ffffff;
+      color: #fbc103;
     }
   
     .cerrar-menu {
@@ -120,7 +114,7 @@
       top: 0;
       right: 0;
       bottom: 0;
-      background-color: #1c1c1c;
+      background-color: #0e0e0e;
       padding: 4rem;
       box-shadow: 0 0 0 100vmax rgba(79, 103, 144, 0.5);
       transition: all 0.5s ease-in-out;
@@ -176,19 +170,14 @@
   
   body {
     background: var(--bkg-color);
+    
   }
-  
-  h1,
-  p {
-    color: var(--text-color);
-  }
-  
   /*Fin boton toogle.*/
   
   /*------------pie-----------*/
   .pie-pagina {
     width: 100%;
-    background-color: #030303;
+    background-color: #00000000;
   }
   .pie-pagina .grupo-1 {
     /*para que se vea en forma de grid*/

@@ -1,4 +1,26 @@
 @charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--backgroundBody-color);
+  font-family: "Mulish";
+}
+
+main {
+  overflow: hidden; /*para que no se salga el contenido de los section*/
+}
+
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 @font-face {
   font-family: "Mulish";
   src: url("/src/fonts/fonts/static/Mulish-BlackItalic.ttf") format("truetype");
@@ -349,7 +371,7 @@ header {
     cursor: pointer;
   }
   .abrir-menu {
-    color: #ffffff;
+    color: rgb(255, 196, 59);
   }
   .cerrar-menu {
     color: #fffefe;
