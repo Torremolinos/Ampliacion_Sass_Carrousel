@@ -1,52 +1,81 @@
-@use 'variables' as v;
+@use 'variables'as v;
 
-@mixin telefono{
-    @media (min-window-width: v.$telefono){
+@mixin telefono {
+    @media (min-window-width: v.$telefono) {
         @content;
     }
 }
-@mixin tablet{
-    @media (min-window-width: v.$tablet){
+
+@mixin tablet {
+    @media (min-window-width: v.$tablet) {
         @content;
     }
 }
-@mixin desktop{
-    @media (min-window-width: v.$desktop){
+
+@mixin desktop {
+    @media (min-window-width: v.$desktop) {
         @content;
     }
 }
-@mixin desktopXL{
-    @media (min-window-width: v.$desktopXL){
+
+@mixin desktopXL {
+    @media (min-window-width: v.$desktopXL) {
         @content;
     }
-} 
+}
+
 @mixin grid($columnas, $espaciado) {
     display: grid;
     grid-template-columns: repeat($columnas, 1fr);
     gap: $espaciado;
 }
-@mixin desktop380{
-    @media (min-window-width: v.$desktop380){
+
+@mixin desktop380 {
+    @media (min-window-width: v.$desktop380) {
         @content;
     }
 }
-@mixin desktop800{
-    @media (min-window-width: v.$desktop800){
+
+@mixin desktop800 {
+    @media (min-window-width: v.$desktop800) {
         @content;
     }
 }
-@mixin desktop960{
-    @media (min-window-width: v.$desktop960){
+
+@mixin desktop960 {
+    @media (min-window-width: v.$desktop960) {
         @content;
     }
 }
-@mixin desktopXxl{
-    @media (min-window-width: v.$desktopL){
+
+@mixin desktopXxl {
+    @media (min-window-width: v.$desktopL) {
         @content;
     }
 }
-@mixin desktopL{
-    @media (min-window-width: v.$desktopL){
+
+@mixin desktopL {
+    @media (min-window-width: v.$desktopL) {
         @content;
+    }
+}
+
+@mixin screen {
+    @media (max-width: 1024px) {
+        :root {
+            --color--white: rgb(218, 179, 107);
+            --color--h3: rgb(154, 17, 8);
+            --backgroundBody-color: black;
+            --backgroundLarianLogo-color: rgba(173, 123, 6, 0.953);
+            --LarianMargin-left: 5rem;
+            --LarianWidth: 5rem;
+            --LarianHeight: 6rem;
+            --h1ps1--font-Size: 4rem;
+            --footParts--padding: 2rem;
+            --h1--font-size: 3rem;
+            --font-family: "Mulish";
+            --s2--font-size: 1rem;
+            --s2--max-height: 37.5rem;
+        }
     }
 }

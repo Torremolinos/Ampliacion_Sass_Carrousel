@@ -1,3 +1,11 @@
+@use 'variables' as v;
+
+// //Fuente
+// @font-face {
+//   font-family: "Mulish";
+//   src: url("/src/fonts/fonts/static/Mulish-BlackItalic.ttf") format("truetype");
+// }
+
 * {
     margin: 0;
     padding: 0;
@@ -5,8 +13,8 @@
   }
   
   body {
-    background-color: var(--backgroundBody-color);
-    font-family: "Mulish";
+    background-color: v.$backgroundBody;
+    font-family: v.$font;
   }
   
   main {
@@ -18,4 +26,38 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+  }
+
+  :root {
+    --color--white: rgb(218, 179, 107);
+    --color--h3:v.$h3;
+    --backgroundBody-color: v.$backgroundBody;
+    --backgroundLarianLogo-color: v.$Logo;
+    --LarianMargin-left:v.$left;
+    --LarianWidth: v.$LarianWidth;
+    --LarianHeight: v.$LarianHeight;
+    --h1ps1--font-Size: v.$h1ps1;
+    --footParts--padding: v.$foot;
+    --h1--font-size: v.$h1size;
+    --font-family: v.$font;
+    --s2--font-size: v.$s2ize;
+    --s2--max-height: v.$s2height;
+  }
+  
+  @media screen and (max-width: 1024px) {
+    :root {
+      --color--white: rgb(218, 179, 107);
+      --color--h3: rgb(154, 17, 8);
+      --backgroundBody-color: black;
+      --backgroundLarianLogo-color: rgba(173, 123, 6, 0.953);
+      --LarianMargin-left: 5rem;
+      --LarianWidth: 5rem;
+      --LarianHeight: 6rem;
+      --h1ps1--font-Size: 4rem;
+      --footParts--padding: 2rem;
+      --h1--font-size: 3rem;
+      --font-family: "Mulish";
+      --s2--font-size: 1rem;
+      --s2--max-height: 37.5rem;
+    }
   }
