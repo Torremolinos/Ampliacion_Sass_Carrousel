@@ -35,10 +35,10 @@ main {
   --LarianHeight: v.$LarianHeight;
   --h1ps1--font-Size: v.$h1ps1;
   --footParts--padding: v.$foot;
-  --h1--font-size: v.$h1size;
+  --h1--font-size:3rem;
   --font-family: v.$font;
-  --s2--font-size: v.$s2ize;
-  --s2--max-height: v.$s2height;
+  --s2--font-size: 2rem;
+  --s2--max-height: 1200px;
 }
 
 @media screen and (max-width: 1024px) {

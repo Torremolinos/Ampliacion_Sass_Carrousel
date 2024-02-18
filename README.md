@@ -4,7 +4,7 @@
 
 **Github:** https://github.com/Torremolinos/BaldursResponsiveGate
 
-**Página web**: https://bg3responsives.netlify.app/
+**Página web**: https://bdg3ampliation.netlify.app/
 
 
 
