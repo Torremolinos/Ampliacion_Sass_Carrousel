@@ -1,8 +1,7 @@
-@font-face {
-    font-family: "Mulish";
-    src: url("/assets/fonts/fonts/static/Mulish-BlackItalic.ttf")
-      format("truetype");
-  }
+  @font-face {
+  font-family: "Mulish";
+  src: url("/src/fonts/fonts/static/Mulish-BlackItalic.ttf") format("truetype");
+}
   
   .contenedor-form {
     background-color: blanchedalmond;
@@ -191,7 +190,3 @@
     body {
       background: var(--bkg-color);
     }
-  
-    
-  /*Fin boton toogle.*/
-  
