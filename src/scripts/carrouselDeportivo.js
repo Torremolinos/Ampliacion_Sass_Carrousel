@@ -40,20 +40,20 @@ const sliderInit = function (currentSlider) {
   const slidePrev = function () {
     currentSlidePos--;
 
-    sliderContainer.style.transform = `translateX(-${sliderContainer.children[currentSlidePos].offsetLeft}px)`;
+    sliderContainer.style.transform = `translateX(-${sliderContainer.children[currentSlidePos].offsetLeft}px)`; // Devuelve el número de píxeles que el borde izquierdo del elemento está desplazado con respecto al borde izquierdo del offsetParent.
 
-    if (currentSlidePos <= 0) sliderPrevBtn.setAttribute("disabled", "");
-    sliderNextBtn.removeAttribute("disabled");
+    if (currentSlidePos <= 0) sliderPrevBtn.setAttribute("disabled", ""); // Establece el atributo especificado en el elemento, si el atributo ya existe, el valor es actualizado.
+    sliderNextBtn.removeAttribute("disabled"); 
   };
 
-  sliderPrevBtn.addEventListener("click", slidePrev);
+  sliderPrevBtn.addEventListener("click", slidePrev); // Agrega un evento al objeto especificado.
 
-  const dontHaveExtraItem = totalSliderItems <= 0;
-  if (dontHaveExtraItem) sliderNextBtn.setAttribute("disabled", "");
+  const dontHaveExtraItem = totalSliderItems <= 0; // Si el total de items es menor o igual a 0, no se puede avanzar o retroceder.
+  if (dontHaveExtraItem) sliderNextBtn.setAttribute("disabled", ""); // Establece el atributo especificado en el elemento, si el atributo ya existe, el valor es actualizado.
 
-  sliderPrevBtn.setAttribute("disabled", "");
+  sliderPrevBtn.setAttribute("disabled", ""); 
 };
 
-for (let i = 0, len = sliders.length; i < len; i++) {
-  sliderInit(sliders[i]);
+for (let i = 0, len = sliders.length; i < len; i++) {  // El elemento sliders es un array, por lo que se recorre con un bucle for. 
+  sliderInit(sliders[i]); 
 }

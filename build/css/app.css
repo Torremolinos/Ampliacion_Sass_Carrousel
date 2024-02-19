@@ -379,7 +379,6 @@ header {
   display: flex;
   gap: 4rem;
 }
-
 .nav-list li a {
   text-decoration: none;
   color: rgb(255, 196, 59);
@@ -701,7 +700,6 @@ article:has(:hover, :focus) {
   height: 100%;
   max-height: var(--s2--max-height);
 }
-
 .s2 p {
   font-size: var(--s2--font-size);
   color: var(--color--white);
@@ -728,7 +726,8 @@ button {
 }
 
 .h1ps1 {
-  color: var(--color--white); /*hacer globales las repetidas o las de mas uso*/
+  color: var(--color--white);
+  /*hacer globales las repetidas o las de mas uso*/
   font-size: var(--h1ps1--font-Size);
   font-family: "Mulish";
 }
@@ -758,22 +757,20 @@ p {
 /*-----------------SLIDER------------------------*/
 :root {
   /**
-   * colors
-   */
+     * colors
+     */
   --background: hsl(210, 7%, 11%);
   --surface-variant: hsl(218, 8%, 28%);
   --secondary-container: hsl(218, 18%, 29%);
   --on-secondary-container: hsl(219, 70%, 91%);
   /**
-   * border radius
-   */
+     * border radius
+     */
   --radius-full: 50%;
   --radius-12: 12px;
 }
 
-/*-----------------------------------*\
-  #RESET
-\*-----------------------------------*/
+/*Reset*/
 *,
 *::before,
 *::after {
@@ -817,9 +814,7 @@ body:is(:hover, :focus-visible)::-webkit-scrollbar-thumb {
   background-color: var(--surface-variant);
 }
 
-/*-----------------------------------*\
-  #MAIN
-\*-----------------------------------*/
+/*Main*/
 .container {
   margin: 3rem;
   padding-inline: 8px;
@@ -828,7 +823,8 @@ body:is(:hover, :focus-visible)::-webkit-scrollbar-thumb {
 }
 
 .slider {
-  --slider-items: 1; /* mandatory for slider */
+  --slider-items: 1;
+  /* mandatory for slider */
   position: relative;
   width: 100%;
   padding-inline: 16px;
@@ -856,7 +852,8 @@ body:is(:hover, :focus-visible)::-webkit-scrollbar-thumb {
 }
 
 .slider-container {
-  position: relative; /* mandatory for slider */
+  position: relative;
+  /* mandatory for slider */
   display: flex;
   justify-content: flex-start;
   transition: transform 250ms ease;
@@ -926,12 +923,7 @@ body:is(:hover, :focus-visible)::-webkit-scrollbar-thumb {
   display: none;
 }
 
-/*-----------------------------------*\
-  #MEDIA QUERIES
-\*-----------------------------------*/
-/**
- * responsive for large than 567px screen
- */
+/*Media Querys*/
 @media (min-width: 567px) {
   .container {
     max-width: 480px;
@@ -942,9 +934,6 @@ body:is(:hover, :focus-visible)::-webkit-scrollbar-thumb {
     --slider-items: 2;
   }
 }
-/**
- * responsive for large than 768px screen
- */
 @media (min-width: 768px) {
   .container {
     max-width: 720px;
@@ -953,9 +942,6 @@ body:is(:hover, :focus-visible)::-webkit-scrollbar-thumb {
     --slider-items: 3;
   }
 }
-/**
- * responsive for large than 992px screen
- */
 @media (min-width: 992px) {
   .container {
     max-width: 960px;
@@ -964,9 +950,6 @@ body:is(:hover, :focus-visible)::-webkit-scrollbar-thumb {
     --slider-items: 4;
   }
 }
-/**
- * responsive for large than 1200px screen
- */
 @media (min-width: 1200px) {
   .container {
     max-width: 1150px;
@@ -978,9 +961,6 @@ body:is(:hover, :focus-visible)::-webkit-scrollbar-thumb {
     --slider-items: 5;
   }
 }
-/**
- * responsive for large than 1400px screen
- */
 @media (min-width: 1400px) {
   .container {
     max-width: 1400px;
